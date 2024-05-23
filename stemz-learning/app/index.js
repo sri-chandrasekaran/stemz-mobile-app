@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image, TouchableOpacity, Pressable } from 'react-native';
+import { Text, View, StyleSheet, Image, Pressable } from 'react-native';
 import { Link } from 'expo-router';
 
 export default function Page() {
