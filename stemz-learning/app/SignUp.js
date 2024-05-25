@@ -3,44 +3,48 @@ import { View, Text, TextInput, Pressable, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 
 export default function SignUp() {
-  const [text, onChangeText] = React.useState('');
-
-  return (
+  const [inputtedStudentNameText, onChangeStudentNameText] = React.useState('');
+  const [inputtedParentNameText, onChangeParentNameText] = React.useState('');
+  const [inputtedParentEmailText, onChangeParentEmailText] = React.useState('');
+  const [inputtedUsernameText, onChangeUsernameText] = React.useState('');
+  const [inputtedPasswordText, onChangePasswordText] = React.useState('');
+  
+return (
     <View style={styles.container}>
       <View style={styles.inputContainer}>
         <Text style={styles.studentNameText}>Student Name</Text>
         <TextInput 
           style={styles.studentNameTextInput}
-          onChangeText={onChangeText}
-          value={text}
+          onChangeText={onChangeStudentNameText}
+          value={inputtedStudentNameText}
           maxLength={40}
         />
         <Text style={styles.parentNameText}>Parent Name</Text>
 	<TextInput 
           style={styles.parentNameTextInput}
-          onChangeText={onChangeText}
-          value={text}
+          onChangeText={onChangeParentNameText}
+          value={inputtedParentNameText}
           maxLength={40}
         />
         <Text style={styles.parentEmailText}>Parent Email</Text>
 	<TextInput 
           style={styles.parentEmailTextInput}
-          onChangeText={onChangeText}
-          value={text}
+          onChangeText={onChangeParentEmailText}
+          value={inputtedParentEmailText}
           maxLength={40}
         />
         <Text style={styles.usernameText}>Username</Text>
 	<TextInput 
           style={styles.usernameTextInput}
-          onChangeText={onChangeText}
-          value={text}
+          onChangeText={onChangeUsernameText}
+          value={inputtedUsernameText}
           maxLength={40}
         />
         <Text style={styles.passwordText}>Password</Text>
 	<TextInput 
           style={styles.passwordTextInput}
-          onChangeText={onChangeText}
-          value={text}
+          onChangeText={onChangePasswordText}
+          value={inputtedPasswordText}
           maxLength={40}
         />
       </View>
