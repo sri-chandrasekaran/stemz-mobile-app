@@ -23,7 +23,7 @@ export default function Login() {
           maxLength={40}
         />
       </View>
-      <Link href="/" asChild>
+      <Link href="/courseList" asChild>
         <Pressable style={styles.buttonLogin}>
           <Text style={styles.buttonLoginText}>Login</Text>
         </Pressable>

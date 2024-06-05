@@ -7,12 +7,12 @@ export default function Page() {
     <View style={styles.container}>
       <Image source={require('../assets/images/stem_logo.png')} style={styles.image} />
       <Text style={styles.title}>STEMz Learning</Text>
-      <Link href="/SignUp" asChild>
+      <Link href="/signUp" asChild>
         <Pressable style={styles.buttonSignUp}>
           <Text style={styles.buttonSignUpText}>Sign Up</Text>
         </Pressable>
       </Link>
-      <Link href="/Login" asChild>
+      <Link href="/login" asChild>
         <Pressable style={styles.buttonLogin}>
           <Text style={styles.buttonLoginText}>Login</Text>
         </Pressable>
